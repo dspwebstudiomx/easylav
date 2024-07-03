@@ -7,6 +7,7 @@ import { Fragment } from "react";
 import "../../node_modules/animate.css/animate.css";
 import heroImage from "../assets/images/images/annie-spratt-5TfCI4nj6B4-unsplash-2400.jpg";
 import SobreNosotros from "@/components/sections/SobreNosotros";
+import NuestrosServicios from "@/components/sections/NuestrosServicios";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <Hero
         titleSection="Bienvenida"
         backgroundImage={heroImage}
-        height="min-h-[45vh]"
+        height="min-h-[60vh]"
         backgroundColor=""
         opacity={"opacity-35"}
         opacityColor={"bg-secondary"}
@@ -44,6 +45,7 @@ export default function Home() {
         </ButtonContainer>
       </Hero>
       <SobreNosotros />
+      <NuestrosServicios />
     </Fragment>
   );
 }
