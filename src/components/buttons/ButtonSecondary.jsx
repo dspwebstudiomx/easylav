@@ -1,12 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
+import Button from './Button'
 
 const ButtonSecondary = ({ title, href, ...props }) => {
   return (
     <Link href={href} {...props}>
-      <button className="bg-secondary w-[250px] h-[80px] text-light  text-xl font-semibold rounded-md border-4 sm:border-none hover:opacity-90">
-        {title}
-      </button>
+      <Button themeButton={'bg-secondary'} title={title} />
     </Link>
   )
 }

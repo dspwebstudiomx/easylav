@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Spacing = ({ distance }) => {
+const Spacing = ({ height }) => {
   return (
-    <div className={distance}></div>
+    <div className={height}></div>
   )
 }
 
