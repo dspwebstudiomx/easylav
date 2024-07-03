@@ -14,8 +14,8 @@ const navlinks = [
   { id: '2', name: 'Quienes Somos', href: '/#nosotros' },
   { id: '3', name: 'Servicios', href: '/#servicios' },
   { id: '4', name: 'Sucursales', href: '/sucursales' },
-  { id: '5', name: 'Franquicias', href: '/franquicias' },
-  { id: '6', name: 'Contacto', href: '/contacto' },
+  { id: '5', name: 'Contacto', href: '/contacto' },
+  { id: '6', name: 'Franquicias', href: '/franquicias' },
 ]
 
 

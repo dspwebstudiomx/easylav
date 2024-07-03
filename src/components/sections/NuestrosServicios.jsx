@@ -37,14 +37,14 @@ const NuestrosServicios = () => {
         <div className='grid place-content-center'>
           <h2 className='text-4xl'>Nuestros Servicios</h2>
         </div>
-        <Spacing height={'h-32'} />
+        <Spacing height={'h-24'} />
         <div className='grid place-content-center gap-8'>
           <ul className='grid sm:grid-cols-3 gap-x-20'>
             {services.map((service) => {
               return (
                 <li key={service.id} className='flex flex-col gap-8'>
                   <Image src={service.image} alt="alt" width={210} className='mx-auto' />
-                  <h3 className='text-3xl text-center'>{service.title}</h3>
+                  <h3 className='text-3xl text-center font-semibold'>{service.title}</h3>
                   <p className='w-2/3 sm:w-full mx-auto text-pretty text-lg'>{service.description}</p>
                 </li>
               )

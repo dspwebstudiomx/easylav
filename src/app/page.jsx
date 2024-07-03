@@ -8,6 +8,7 @@ import "../../node_modules/animate.css/animate.css";
 import heroImage from "../assets/images/images/annie-spratt-5TfCI4nj6B4-unsplash-2400.jpg";
 import SobreNosotros from "@/components/sections/SobreNosotros";
 import NuestrosServicios from "@/components/sections/NuestrosServicios";
+import NuestrasSucursales from "@/components/sections/NuestrasSucursales";
 
 export default function Home() {
   return (
@@ -23,11 +24,11 @@ export default function Home() {
       >
         <div className="text-4xl sm:text-5xl tracking-wide text-balance flex flex-col  gap-12 sm:w-1/2 px-6 sm:px-0">
           <h1>
-            <span className="mr-2">
+            <span className="mr-2 font-semibold">
               En Lavanderías
             </span>
-            <span className="text-primary">Easy</span>
-            <span className="text-primary">lav</span>
+            <span className="text-primary font-semibold">Easy</span>
+            <span className="text-primary font-semibold">lav</span>
             <span className="font-normal mr-4">
               ,
             </span>
@@ -46,6 +47,7 @@ export default function Home() {
       </Hero>
       <SobreNosotros />
       <NuestrosServicios />
+      <NuestrasSucursales />
     </Fragment>
   );
 }
