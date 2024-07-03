@@ -40,8 +40,8 @@ export default function Home() {
         </div>
         <Spacing height="h-10" />
         <ButtonContainer>
-          <ButtonPrimary title={"Nuestros Servicios"} href={"/#servicios"} />
-          <ButtonSecondary title={"Sucursales"} href={"/sucursales"} />
+          <ButtonPrimary title={"Nuestros Servicios"} href={"/#servicios"} border={'border-2 border-light'} />
+          <ButtonSecondary title={"Sucursales"} href={"/sucursales"} border={'border-2 border-light'} />
         </ButtonContainer>
       </Hero>
       <SobreNosotros />

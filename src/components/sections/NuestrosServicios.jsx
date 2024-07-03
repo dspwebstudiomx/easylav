@@ -6,6 +6,8 @@ import Spacing from '../layout/Spacing'
 import imageService1 from '../../assets/images/gif/lavadero.gif'
 import imageService2 from '../../assets/images/gif/lavar-la-ropa.gif'
 import imageService3 from '../../assets/images/gif/planchar.gif'
+import ButtonContainer from '../containers/ButtonContainer'
+import ButtonSecondary from '../buttons/ButtonSecondary'
 
 const services = [
   {
@@ -49,6 +51,9 @@ const NuestrosServicios = () => {
             })
             }
           </ul>
+          <ButtonContainer position={'justify-center'} distance={'mt-16'}>
+            <ButtonSecondary title={'Conoce nuestras Sucursales'} href={'/sucursales'} width={'xl:w-[340px]'} border={'border-none'} />
+          </ButtonContainer>
         </div>
       </Container>
 
