@@ -9,6 +9,7 @@ import heroImage from "../assets/images/images/annie-spratt-5TfCI4nj6B4-unsplash
 import SobreNosotros from "@/components/sections/SobreNosotros";
 import NuestrosServicios from "@/components/sections/NuestrosServicios";
 import NuestrasSucursales from "@/components/sections/NuestrasSucursales";
+import Testimonios from "@/components/sections/Testimonios";
 
 export default function Home() {
   return (
@@ -48,6 +49,7 @@ export default function Home() {
       <SobreNosotros />
       <NuestrosServicios />
       <NuestrasSucursales />
+      <Testimonios />
     </Fragment>
   );
 }

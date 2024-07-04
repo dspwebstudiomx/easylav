@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { APIProvider, Map, Marker, Pin } from '@vis.gl/react-google-maps';
+import { AdvancedMarker, APIProvider, Map, Marker, Pin } from '@vis.gl/react-google-maps';
 import Section from '../templates/Section'
 import Container from '../containers/Container'
 import Spacing from '../layout/Spacing'
@@ -51,7 +51,7 @@ const NuestrasSucursales = () => {
 
 
   return (
-    <Section id={'servicios'}>
+    <Section id={'sucursales'}>
       <Container >
         <div className='grid place-content-center'>
           <h2 className='text-4xl'>Sucursales</h2>
@@ -62,13 +62,14 @@ const NuestrasSucursales = () => {
           <div className='grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-12 w-[80%] mx-auto'>
             {localservices.map((localservice) => {
               return (
-                <article key={localservice.id} className='flex flex-col gap-5 border-2 p-8 border-primary rounded-xl'>
+                <article id={`sucursal-${localservice.title}`} key={localservice.id} className='flex flex-col gap-5 border-2 p-8 border-primary rounded-xl'>
                   <APIProvider apiKey='AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik'>
                     <h3 className='text-center font-semibold text-xl'>{localservice.title}</h3>
                     <div className='w-full h-[180px] rounded-lg'>
-                      <Map center={localservice.position} zoom={17}>
-                        <Marker position={localservice.position} icon={icon} />
-                        <Pin background={'#FBBC04'} glyphColor={'#000'} borderColor={'#000'} />
+                      <Map center={localservice.position} zoom={17} id={`gmap-${localservice.title}`}>
+                        <AdvancedMarker position={localservice.position}>
+                          <Pin background={'#FBBC04'} glyphColor={'#000'} borderColor={'#000'} />
+                        </AdvancedMarker>
                       </Map>
                     </div>
                     <a href={localservice.gmap} target="_blank" rel="noopener noreferrer"></a>
