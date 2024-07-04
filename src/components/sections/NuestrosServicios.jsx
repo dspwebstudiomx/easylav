@@ -39,7 +39,7 @@ const NuestrosServicios = () => {
         </div>
         <Spacing height={'h-24'} />
         <div className='grid place-content-center gap-8'>
-          <ul className='grid sm:grid-cols-3 gap-x-20'>
+          <ul className='grid sm:grid-cols-3 gap-20'>
             {services.map((service) => {
               return (
                 <li key={service.id} className='flex flex-col gap-8'>

@@ -58,25 +58,25 @@ const NuestrasSucursales = () => {
         </div>
         <Spacing height={'h-24'} />
 
-        <div className='grid place-content-center gap-8'>
-          <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-x-20 2xl:w-[80%] mx-auto'>
+        <div className='grid place-content-center'>
+          <div className='grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-12 w-[80%] mx-auto'>
             {localservices.map((localservice) => {
               return (
                 <article key={localservice.id} className='flex flex-col gap-5 border-2 p-8 border-primary rounded-xl'>
                   <APIProvider apiKey='AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik'>
                     <h3 className='text-center font-semibold text-xl'>{localservice.title}</h3>
-                    <div className='w-full h-[180px]'>
-                      <Map center={localservice.position} zoom={19}>
+                    <div className='w-full h-[180px] rounded-lg'>
+                      <Map center={localservice.position} zoom={17}>
                         <Marker position={localservice.position} icon={icon} />
                         <Pin background={'#FBBC04'} glyphColor={'#000'} borderColor={'#000'} />
                       </Map>
                     </div>
                     <a href={localservice.gmap} target="_blank" rel="noopener noreferrer"></a>
-                    <p className='w-2/3 sm:w-full mx-auto text-pretty text-sm flex gap-3 items-center'>
+                    <p className='w-full mx-auto text-pretty text-sm flex gap-3 items-center'>
                       <span className='text-secondary text-xl'><FaMapMarkerAlt /></span>
                       <span>{localservice.place}</span>
                     </p>
-                    <div className='w-2/3 sm:w-full mx-auto text-pretty text-sm flex gap-4 items-center'>
+                    <div className='w-full mx-auto text-pretty text-sm flex gap-4 items-center'>
                       <span className='text-secondary text-sm'><FaRegClock /></span>
                       <div className='flex flex-col gap-1'>
                         <div className='flex gap-2'>

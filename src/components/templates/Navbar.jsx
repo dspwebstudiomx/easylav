@@ -15,9 +15,7 @@ const navlinks = [
   { id: '3', name: 'Servicios', href: '/#servicios' },
   { id: '4', name: 'Sucursales', href: '/sucursales' },
   { id: '5', name: 'Contacto', href: '/contacto' },
-  { id: '6', name: 'Franquicias', href: '/franquicias' },
 ]
-
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -37,10 +35,13 @@ const Navbar = () => {
             {navlinks.map((navlink) => {
               return (
                 <li key={navlink.id} >
-                  <a className='uppercase font-semibold text-md xl:text-md text-dark  hover:text-primary' href={navlink.href}>{navlink.name}</a>
+                  <a className='uppercase font-semibold text-md xl:text-md text-dark  hover:text-primary navlink' href={navlink.href}>{navlink.name}</a>
                 </li>
               )
             })}
+            <li>
+              <a className='uppercase font-semibold text-md xl:text-md text-primary  hover:text-primary' href='/franquicias'>Franquicias</a>
+            </li>
           </ul>
           {/* Desktop menu */}
 
