@@ -1,21 +1,21 @@
 'use client'
 import React from 'react'
+import { APIProvider, Map, Marker, Pin } from '@vis.gl/react-google-maps';
 import Section from '../templates/Section'
 import Container from '../containers/Container'
-import Image from 'next/image'
 import Spacing from '../layout/Spacing'
 import ButtonContainer from '../containers/ButtonContainer'
 import ButtonSecondary from '../buttons/ButtonSecondary'
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaRegClock } from 'react-icons/fa6'
+import icon from '../../assets/images/favicon/favicon.png'
 
 const localservices = [
   {
     id: 1,
     title: 'Madero',
     gmap: '',
-    lat: '',
-    lng: '',
+    position: { lat: 19.70764, lng: -101.17192 },
     place: 'Av Francisco I. Madero Ote 2162, Isaac Arriaga, 58210 Morelia, Mich.',
     serviceday1: 'Lunes-Sabado:',
     servicehour1: '8:00 a.m a 8:30 p.m',
@@ -26,8 +26,7 @@ const localservices = [
     id: 2,
     title: 'Solidaridad',
     gmap: '',
-    lat: '',
-    lng: '',
+    position: { lat: 19.68546, lng: -101.16852 },
     place: 'Av Solidaridad 1167-A, Nueva Chapultepec, 58280 Morelia, Mich.',
     serviceday1: 'Lunes-Sabado:',
     servicehour1: '7:00 a.m a 9:00 p.m',
@@ -38,8 +37,7 @@ const localservices = [
     id: 3,
     title: 'Jerez',
     gmap: '',
-    lat: '21.1017566',
-    lng: '-102.2498605,10',
+    position: { lat: 21.10240, lng: -101.63745 },
     place: 'Blvd. Paseo de Jerez Sur 229-LOCAL 5, Jardines de Jerez, 37530 León de los Aldama, Gto.',
     serviceday1: 'Lunes-Sabado:',
     servicehour1: '7:30 a.m a 9:30 p.m',
@@ -51,17 +49,6 @@ const localservices = [
 
 const NuestrasSucursales = () => {
 
-  function iniciarMap() {
-    var coord = { lat: -34.5956145, lng: -58.4431949 };
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 10,
-      center: coord
-    });
-    var marker = new google.maps.Marker({
-      position: coord,
-      map: map
-    });
-  }
 
   return (
     <Section id={'servicios'}>
@@ -72,29 +59,37 @@ const NuestrasSucursales = () => {
         <Spacing height={'h-24'} />
 
         <div className='grid place-content-center gap-8'>
-          <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-x-20'>
+          <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-x-20 2xl:w-[80%] mx-auto'>
             {localservices.map((localservice) => {
               return (
                 <article key={localservice.id} className='flex flex-col gap-5 border-2 p-8 border-primary rounded-xl'>
-                  <h3 className='text-center font-semibold text-3xl'>{localservice.title}</h3>
-                  <div id='map'></div>
-                  <p className='w-2/3 sm:w-full mx-auto text-pretty text-md flex gap-3 items-center'>
-                    <span className='text-secondary text-xl'><FaMapMarkerAlt /></span>
-                    <span>{localservice.place}</span>
-                  </p>
-                  <div className='w-2/3 sm:w-full mx-auto text-pretty text-md flex gap-4 items-center'>
-                    <span className='text-secondary text-xl'><FaRegClock /></span>
-                    <div className='flex flex-col gap-1'>
-                      <div className='flex gap-2'>
-                        <span>{localservice.serviceday1}</span>
-                        <span>{localservice.servicehour1}</span>
-                      </div>
-                      <div className='flex gap-2'>
-                        <span>{localservice.serviceday2}</span>
-                        <span>{localservice.servicehour2}</span>
+                  <APIProvider apiKey='AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik'>
+                    <h3 className='text-center font-semibold text-xl'>{localservice.title}</h3>
+                    <div className='w-full h-[180px]'>
+                      <Map center={localservice.position} zoom={19}>
+                        <Marker position={localservice.position} icon={icon} />
+                        <Pin background={'#FBBC04'} glyphColor={'#000'} borderColor={'#000'} />
+                      </Map>
+                    </div>
+                    <a href={localservice.gmap} target="_blank" rel="noopener noreferrer"></a>
+                    <p className='w-2/3 sm:w-full mx-auto text-pretty text-sm flex gap-3 items-center'>
+                      <span className='text-secondary text-xl'><FaMapMarkerAlt /></span>
+                      <span>{localservice.place}</span>
+                    </p>
+                    <div className='w-2/3 sm:w-full mx-auto text-pretty text-sm flex gap-4 items-center'>
+                      <span className='text-secondary text-sm'><FaRegClock /></span>
+                      <div className='flex flex-col gap-1'>
+                        <div className='flex gap-2'>
+                          <span>{localservice.serviceday1}</span>
+                          <span>{localservice.servicehour1}</span>
+                        </div>
+                        <div className='flex gap-2'>
+                          <span>{localservice.serviceday2}</span>
+                          <span>{localservice.servicehour2}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </APIProvider>
                 </article>
               )
             })
