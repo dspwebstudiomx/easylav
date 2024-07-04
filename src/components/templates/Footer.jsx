@@ -19,7 +19,7 @@ const Footer = () => {
               <ul className='flex flex-col gap-1'>
                 <li><a href='/' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Inicio</span></a></li>
                 <li><a href='/#nosotros' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Quienes Somos</span></a></li>
-                <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Servcios</span></a></li>
+                <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Servicios</span></a></li>
                 <li><a href='/sucursales' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Sucursales</span></a></li>
                 <li><a href='/contacto' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Contacto</span></a></li>
                 <li><a href='/franquicias' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Franquicias</span></a></li>
@@ -34,7 +34,7 @@ const Footer = () => {
               </ul>
             </div>
             <div id='footer-privacy-terms' className='flex flex-col gap-8'>
-              <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Políticas de Privacidad, Terminos y Condiciones</h3>
+              <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Políticas de Privacidad, Términos y Condiciones</h3>
               <ul className='flex flex-col gap-1'>
                 <li><a href='/politica-privacidad' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Política de Privacidad</span></a></li>
                 <li><a href='/terminos-condiciones' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Términos y Condiciones</span></a></li>

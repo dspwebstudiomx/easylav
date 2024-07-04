@@ -7,7 +7,7 @@ export const metadata = {
 
 const Sucursales = () => {
   return (
-    <div>page</div>
+    <div>Sucursales</div>
   )
 }
 
