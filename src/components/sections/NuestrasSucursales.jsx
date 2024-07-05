@@ -13,7 +13,7 @@ import icon from '../../assets/images/favicon/favicon.png'
 const localservices = [
   {
     id: 1,
-    title: 'Madero',
+    title: 'Madero Oriente',
     gmap: '',
     position: { lat: 19.70764, lng: -101.17192 },
     place: 'Av Francisco I. Madero Ote 2162, Isaac Arriaga, 58210 Morelia, Mich.',
@@ -24,7 +24,7 @@ const localservices = [
   },
   {
     id: 2,
-    title: 'Solidaridad',
+    title: 'Nueva Chapultepec',
     gmap: '',
     position: { lat: 19.68546, lng: -101.16852 },
     place: 'Av Solidaridad 1167-A, Nueva Chapultepec, 58280 Morelia, Mich.',
@@ -35,7 +35,7 @@ const localservices = [
   },
   {
     id: 3,
-    title: 'Jerez',
+    title: 'Jardines de Jerez',
     gmap: '',
     position: { lat: 21.10240, lng: -101.63745 },
     place: 'Blvd. Paseo de Jerez Sur 229-LOCAL 5, Jardines de Jerez, 37530 León de los Aldama, Gto.',
@@ -48,8 +48,6 @@ const localservices = [
 
 
 const NuestrasSucursales = () => {
-
-
   return (
     <Section id={'sucursales'}>
       <Container >
@@ -59,7 +57,7 @@ const NuestrasSucursales = () => {
         <Spacing height={'h-24'} />
 
         <div className='grid place-content-center'>
-          <div className='grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-12 w-[80%] mx-auto'>
+          <div className='grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-12 mx-auto'>
             {localservices.map((localservice) => {
               return (
                 <article id={`sucursal-${localservice.title}`} key={localservice.id} className='flex flex-col gap-5 border-2 p-8 border-primary rounded-xl'>
@@ -79,12 +77,12 @@ const NuestrasSucursales = () => {
                     </p>
                     <div className='w-full mx-auto text-pretty text-sm flex gap-4 items-center'>
                       <span className='text-secondary text-sm'><FaRegClock /></span>
-                      <div className='flex flex-col gap-1'>
-                        <div className='flex gap-2'>
+                      <div className='flex flex-col gap-3 xl:gap-1'>
+                        <div className='flex gap-1 flex-col lg:flex-row'>
                           <span>{localservice.serviceday1}</span>
                           <span>{localservice.servicehour1}</span>
                         </div>
-                        <div className='flex gap-2'>
+                        <div className='flex flex-col gap-1 lg:flex-row'>
                           <span>{localservice.serviceday2}</span>
                           <span>{localservice.servicehour2}</span>
                         </div>
@@ -101,7 +99,6 @@ const NuestrasSucursales = () => {
           </ButtonContainer>
         </div>
       </Container>
-
     </Section >
   )
 }

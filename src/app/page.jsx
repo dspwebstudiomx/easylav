@@ -10,6 +10,7 @@ import SobreNosotros from "@/components/sections/SobreNosotros";
 import NuestrosServicios from "@/components/sections/NuestrosServicios";
 import NuestrasSucursales from "@/components/sections/NuestrasSucursales";
 import Testimonios from "@/components/sections/Testimonios";
+import PorqueElegirnos from "@/components/sections/PorqueElegirnos";
 
 export default function Home() {
   return (
@@ -20,10 +21,10 @@ export default function Home() {
         height="min-h-[60vh]"
         backgroundColor=""
         opacity={"opacity-35"}
-        opacityColor={"bg-secondary"}
+        opacityColor={"bg-dark"}
         textColor={"text-light"}
       >
-        <div className="text-4xl sm:text-5xl tracking-wide text-balance flex flex-col  gap-12 sm:w-1/2 px-6 sm:px-0">
+        <div className="text-4xl sm:text-5xl tracking-wide text-balance flex flex-col  gap-12 px-6 sm:px-0">
           <h1>
             <span className="mr-2 font-semibold">
               En Lavanderías
@@ -48,6 +49,7 @@ export default function Home() {
       </Hero>
       <SobreNosotros />
       <NuestrosServicios />
+      <PorqueElegirnos />
       <NuestrasSucursales />
       <Testimonios />
     </Fragment>

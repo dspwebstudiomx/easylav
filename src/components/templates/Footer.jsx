@@ -10,11 +10,9 @@ const Footer = () => {
     <>
       <Section backgroundColor={'bg-secondary'} id={'footer'}>
         <Container>
-          <div className='grid gap-16 justify-between sm:grid-cols-4'>
-            <div id='footer-logo' className='w-full'>
-              <Image src={logo} alt='logo' className='w-[230px] h-auto mx-auto sm:ml-auto' />
-            </div>
-            <div id='footer-sections' className='flex flex-col gap-8'>
+          <div className=' grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 gap-12'>
+
+            <div id='footer-sections' className='flex flex-col gap-8 w-full'>
               <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Secciones</h3>
               <ul className='flex flex-col gap-1'>
                 <li><a href='/' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Inicio</span></a></li>
@@ -25,7 +23,8 @@ const Footer = () => {
                 <li><a href='/franquicias' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Franquicias</span></a></li>
               </ul>
             </div>
-            <div id='footer-services' className='flex flex-col gap-8'>
+
+            <div id='footer-services' className='flex flex-col gap-8 w-full'>
               <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Servicios</h3>
               <ul className='flex flex-col gap-1'>
                 <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Lavado Regular</span></a></li>
@@ -33,16 +32,22 @@ const Footer = () => {
                 <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Planchado y Doblez</span></a></li>
               </ul>
             </div>
-            <div id='footer-privacy-terms' className='flex flex-col gap-8'>
-              <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Políticas de Privacidad, Términos y Condiciones</h3>
+
+            <div id='footer-privacy-terms' className='flex flex-col gap-8 w-full sm:w-1/2 xl:w-full'>
+              <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Políticas Privacidad, Términos Condiciones</h3>
               <ul className='flex flex-col gap-1'>
                 <li><a href='/politica-privacidad' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Política de Privacidad</span></a></li>
                 <li><a href='/terminos-condiciones' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Términos y Condiciones</span></a></li>
               </ul>
             </div>
+
+            <div id='footer-logo' className='sm:w-full'>
+              <Image src={logo} alt='logo' className='w-[230px] h-auto mx-auto sm:ml-auto' />
+            </div>
+
           </div>
         </Container>
-      </Section>
+      </Section >
       <div className='text-light bg-primary py-6'>
         <div className='flex justify-between 2xl:max-w-screen-2xl xl:max-w-screen-xl mx-auto w-[80%] flex-col sm:flex-row gap-4 text-center sm:text-left text-sm'>
           <h3>Derechos Reservados 2024</h3>

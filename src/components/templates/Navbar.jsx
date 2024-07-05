@@ -68,7 +68,7 @@ const Navbar = () => {
 
       </Container>
       {/* Tablet menu */}
-      <ul id='navlinks-tablet' className='hidden lg:flex xl:hidden gap-8 bg-primary justify-center py-5'>
+      <ul id='navlinks-tablet' className='hidden lg:flex xl:hidden gap-8 bg-primary justify-evenly py-5'>
         {navlinks.map((navlink) => {
           return <a className='uppercase font-semibold text-md text-dark  hover:text-secondary' key={navlink.id} href={navlink.href}>{navlink.name}</a>
         })}

@@ -78,7 +78,7 @@ const testimonios = [
   },
   {
     id: 6,
-    nombre: 'Pedro D',
+    nombre: 'Pedro D.',
     testimonio: '¡No puedo decir suficientes cosas buenas sobre Lavanderías Easylav! Mi ropa nunca ha estado tan limpia y suave. ¡Gracias por el excelente servicio!',
     estrellas: [
       <FaStar key={1} />,
