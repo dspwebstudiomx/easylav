@@ -1,19 +1,8 @@
-'use client'
 import React from 'react'
-import { APIProvider, Map, Marker, Pin } from '@vis.gl/react-google-maps';
 import Section from '../templates/Section'
 import Container from '../containers/Container'
-import Spacing from '../layout/Spacing'
-import ButtonContainer from '../containers/ButtonContainer'
-import ButtonSecondary from '../buttons/ButtonSecondary'
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaRegClock } from 'react-icons/fa6'
-import icon from '../../assets/images/favicon/favicon.png'
 import { FaStar } from "react-icons/fa6";
 import { FaStarHalf } from "react-icons/fa6";
-import { FaRegStar } from "react-icons/fa6";
-
-
 
 const testimonios = [
   {
@@ -90,14 +79,12 @@ const testimonios = [
   },
 ]
 
-
-
 const Testimonios = () => {
   return (
     <Section id={'testimonios'}>
       <Container >
         <div className='grid place-content-center'>
-          <h2 className='text-4xl'>Testimonios</h2>
+          <h2>Testimonios</h2>
         </div>
         <div className='grid place-content-center'>
           <div className='grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-12 w-[100%] mx-auto'>

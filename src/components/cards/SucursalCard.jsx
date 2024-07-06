@@ -16,11 +16,12 @@ const SucursalCard = ({ title, id, position, gmap, serviceday1, serviceday2, ser
             </AdvancedMarker>
           </Map>
         </div>
-        <a href={gmap} target="_blank" rel="noopener noreferrer"></a>
-        <p className='w-full mx-auto text-pretty text-sm flex gap-3 items-center'>
-          <span className='text-secondary text-xl'><FaMapMarkerAlt /></span>
-          <span>{place}</span>
-        </p>
+        <a href={gmap} target="_blank" rel="noopener noreferrer">
+          <p className='w-full mx-auto text-pretty text-sm flex gap-3 items-center'>
+            <span className='text-secondary text-xl'><FaMapMarkerAlt /></span>
+            <span>{place}</span>
+          </p>
+        </a>
         <div className='w-full mx-auto text-pretty text-sm flex gap-4 items-center'>
           <span className='text-secondary text-sm'><FaRegClock /></span>
           <div className='flex flex-col gap-3 xl:gap-1'>

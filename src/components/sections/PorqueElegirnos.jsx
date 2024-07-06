@@ -15,7 +15,7 @@ const PorqueElegirnos = ({ id }) => {
         <article className='grid sm:grid-cols-2 gap-x-20 gap-y-16 mx-auto'>
           <div className='grid place-content-center gap-12'>
             <div className='border-l-4 border-primary pl-3'>
-              <h2 className='text-4xl'>Porqué Elegirnos?</h2>
+              <h2>Porqué Elegirnos?</h2>
             </div>
             <div className='text-balance text-2xl flex flex-col gap-6'>
               <div className='flex gap-2'>

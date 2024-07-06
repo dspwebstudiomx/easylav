@@ -22,7 +22,7 @@ const Navbar = () => {
   const toggleNav = () => setNav(!nav);
   return (
     <nav id='nav' className='w-full h-[120px] mx-auto bg-light z-50 border-b-4 border-primary shadow-xl'>
-      <Container className={'flex justify-between'}>
+      <Container className={'flex justify-between px-20'}>
         <div id='navbar' className='flex justify-between items-center h-[120px]'>
           <div id='logo'>
             <a href="/">

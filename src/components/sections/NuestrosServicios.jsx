@@ -35,9 +35,9 @@ const NuestrosServicios = () => {
     <Section id={'servicios'}>
       <Container >
         <div className='grid place-content-center'>
-          <h2 className='text-4xl'>Nuestros Servicios</h2>
+          <h2>Nuestros Servicios</h2>
         </div>
-        <Spacing height={'h-24'} />
+        <Spacing height={'h-4'} />
         <div className='grid place-content-center gap-8'>
           <ul className='grid sm:grid-cols-3 gap-20'>
             {services.map((service) => {
@@ -52,7 +52,7 @@ const NuestrosServicios = () => {
             }
           </ul>
           <ButtonContainer position={'justify-center'} distance={'mt-16'}>
-            <ButtonSecondary title={'Conoce nuestras Sucursales'} href={'/sucursales'} width={'xl:w-[340px]'} border={'border-none'} />
+            <ButtonSecondary title={'Conoce nuestras Sucursales'} href={'/sucursales'} width={'md:w-[380px] xl:w-[340px]'} border={'border-none'} />
           </ButtonContainer>
         </div>
       </Container>

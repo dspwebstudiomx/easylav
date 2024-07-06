@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <Section backgroundColor={'bg-secondary'} id={'footer'}>
-        <Container className='sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-2xl sm:w-[60%] w-[80%] flex justify-between flex-col gap-y-12 mx-auto sm:flex-row sm:px-12 ' >
+        <Container className='sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-2xl flex justify-between flex-col gap-y-12 mx-auto sm:flex-row sm:px-12 ' >
 
           {/* Footer Sections */}
           <div id='footer-sections' className='flex flex-col gap-8 w-full'>
@@ -38,7 +38,7 @@ const Footer = () => {
 
           {/* Footer Privacy & Terms */}
           <div id='footer-privacy-terms' className='flex flex-col gap-8 w-full xl:w-full'>
-            <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Políticas Privacidad, <br></br><span>Términos Condiciones</span></h3>
+            <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Políticas y Términos</h3>
             <ul className='flex flex-col gap-1'>
               <li><a href='/politica-privacidad' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Política de Privacidad</span></a></li>
               <li><a href='/terminos-condiciones' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Términos y Condiciones</span></a></li>

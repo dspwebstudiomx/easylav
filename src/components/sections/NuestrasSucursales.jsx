@@ -12,9 +12,9 @@ const NuestrasSucursales = () => {
     <Section id="nuestras-sucursales">
       <Container >
         <div className='grid place-content-center'>
-          <h2 className='text-4xl'>Sucursales</h2>
+          <h2>Sucursales</h2>
         </div>
-        <Spacing height={'h-24'} />
+        <Spacing height={'h-6'} />
 
         <div className='grid place-content-center'>
           <div className='grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-12 mx-auto'>
