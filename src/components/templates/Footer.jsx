@@ -9,37 +9,35 @@ const Footer = () => {
   return (
     <>
       <Section backgroundColor={'bg-secondary'} id={'footer'}>
-        <div className='sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-2xl sm:w-[100%] w-[80%] flex justify-between flex-col gap-32 mx-auto sm:flex-row sm:px-12'>
-          <div className='grid grid-cols-2 sm:gap-32'>
+        <Container className='sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-2xl sm:w-[60%] w-[80%] flex justify-between flex-col gap-y-12 mx-auto sm:flex-row sm:px-12 ' >
 
-            {/* Footer Sections */}
-            <div id='footer-sections' className='flex flex-col gap-8 w-full'>
-              <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Secciones</h3>
-              <ul className='flex flex-col gap-1'>
-                <li><a href='/' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Inicio</span></a></li>
-                <li><a href='/#nosotros' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Quienes Somos</span></a></li>
-                <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Servicios</span></a></li>
-                <li><a href='/sucursales' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Sucursales</span></a></li>
-                <li><a href='/contacto' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Contacto</span></a></li>
-                <li><a href='/franquicias' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Franquicias</span></a></li>
-              </ul>
-            </div>
-            {/* Footer Sections */}
-
-            {/* Footer Services */}
-            <div id='footer-services' className='flex flex-col gap-8 w-full'>
-              <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Servicios</h3>
-              <ul className='flex flex-col gap-1'>
-                <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Lavado Regular</span></a></li>
-                <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Lavado Especializado</span></a></li>
-                <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Planchado y Doblez</span></a></li>
-              </ul>
-            </div>
-            {/* Footer Services */}
-
+          {/* Footer Sections */}
+          <div id='footer-sections' className='flex flex-col gap-8 w-full'>
+            <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Secciones</h3>
+            <ul className='flex flex-col gap-1'>
+              <li><a href='/' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Inicio</span></a></li>
+              <li><a href='/#nosotros' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Quienes Somos</span></a></li>
+              <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Servicios</span></a></li>
+              <li><a href='/sucursales' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Sucursales</span></a></li>
+              <li><a href='/contacto' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Contacto</span></a></li>
+              <li><a href='/franquicias' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Franquicias</span></a></li>
+            </ul>
           </div>
+          {/* Footer Sections */}
+
+          {/* Footer Services */}
+          <div id='footer-services' className='flex flex-col gap-8 w-full'>
+            <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Servicios</h3>
+            <ul className='flex flex-col gap-1'>
+              <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Lavado Regular</span></a></li>
+              <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Lavado Especializado</span></a></li>
+              <li><a href='/#servicios' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Planchado y Doblez</span></a></li>
+            </ul>
+          </div>
+          {/* Footer Services */}
+
           {/* Footer Privacy & Terms */}
-          <div id='footer-privacy-terms' className='flex flex-col gap-8 w-full sm:w-1/2 xl:w-full'>
+          <div id='footer-privacy-terms' className='flex flex-col gap-8 w-full xl:w-full'>
             <h3 className='text-primary uppercase leading-6 text-lg font-medium'>Políticas Privacidad, <br></br><span>Términos Condiciones</span></h3>
             <ul className='flex flex-col gap-1'>
               <li><a href='/politica-privacidad' className='text-white hover:text-primary flex items-center'><TbPoint className='text-primary text-2xl' /><span className='ml-2'>Política de Privacidad</span></a></li>
@@ -48,15 +46,13 @@ const Footer = () => {
           </div>
           {/* Footer Privacy & Terms */}
 
-
-
-          <div >
-            <div id='footer-logo' className='sm:w-full'>
-              <Image src={logo} alt='logo' className='w-[230px] h-auto mx-auto sm:ml-auto sm:w-[280px]' />
-            </div>
+          {/* Footer Logo */}
+          <div id='footer-logo' className='sm:w-full'>
+            <Image src={logo} alt='logo' className='w-[230px] h-auto mx-auto sm:mr-auto' />
           </div>
+          {/* Footer Logo */}
 
-        </div>
+        </Container>
       </Section >
       <div className='text-dark bg-primary py-6'>
         <div className='flex justify-between 2xl:max-w-screen-2xl xl:max-w-screen-xl mx-auto w-[80%] flex-col sm:flex-row gap-4 text-center sm:text-left text-sm'>

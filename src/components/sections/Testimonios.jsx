@@ -100,7 +100,7 @@ const Testimonios = () => {
           <h2 className='text-4xl'>Testimonios</h2>
         </div>
         <div className='grid place-content-center'>
-          <div className='grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-12 w-[100%] mx-auto'>
+          <div className='grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-12 w-[100%] mx-auto'>
             {testimonios.map((testimonio) => {
               return (
                 <article className='shadow-lg p-12 flex flex-col justify-between' key={testimonio.id}>
@@ -120,7 +120,7 @@ const Testimonios = () => {
                   </div>
                 </article>
               )
-            })
+            }).slice(2)
             }
           </div>
         </div>

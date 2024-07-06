@@ -18,20 +18,20 @@ const PorqueElegirnos = ({ id }) => {
               <h2 className='text-4xl'>Porqué Elegirnos?</h2>
             </div>
             <div className='text-balance text-2xl flex flex-col gap-6'>
-              <div className='flex'>
-                <span className='text-primary text-2xl'><TbPoint /></span>
+              <div className='flex gap-2'>
+                <span className='text-primary text-3xl'><TbPoint /></span>
                 <span className='font-semibold'>Compromiso con la Calidad</span>
               </div>
-              <div className='ml-6 text-xl'>
+              <div className='ml-8 text-xl'>
                 Utilizamos solo productos y técnicas de lavado <br></br> de primera categoría.
               </div>
             </div>
             <div className='text-balance text-2xl flex flex-col gap-6'>
-              <div className='flex'>
-                <span className='text-primary text-2xl'><TbPoint /></span>
+              <div className='flex gap-2'>
+                <span className='text-primary text-3xl'><TbPoint /></span>
                 <span className='font-semibold'>Experiencia y Profesionalismo</span>
               </div>
-              <div className='ml-6 text-xl'>
+              <div className='ml-8 text-xl'>
                 Nuestro equipo está altamente capacitado y comprometido con tu satisfacción.
               </div>
             </div>
