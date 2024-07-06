@@ -21,8 +21,8 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const toggleNav = () => setNav(!nav);
   return (
-    <nav id='nav' className='w-full h-[120px] mx-auto bg-light'>
-      <Container>
+    <nav id='nav' className='w-full h-[120px] mx-auto bg-light z-50 border-b-4 border-primary shadow-xl'>
+      <Container className={'flex justify-between'}>
         <div id='navbar' className='flex justify-between items-center h-[120px]'>
           <div id='logo'>
             <a href="/">

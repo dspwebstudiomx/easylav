@@ -99,12 +99,11 @@ const Testimonios = () => {
         <div className='grid place-content-center'>
           <h2 className='text-4xl'>Testimonios</h2>
         </div>
-        <Spacing height={'h-20'} />
         <div className='grid place-content-center'>
           <div className='grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-12 w-[100%] mx-auto'>
             {testimonios.map((testimonio) => {
               return (
-                <article className='shadow-lg px-6 py-16 flex flex-col justify-between' key={testimonio.id}>
+                <article className='shadow-lg p-12 flex flex-col justify-between' key={testimonio.id}>
                   <p className='text-pretty'>{testimonio.testimonio}</p>
                   <div className='flex flex-col md:flex-row mt-6 gap-2 justify-between items-center'>
                     <h3 className='font-semibold text-lg'>{testimonio.nombre}</h3>

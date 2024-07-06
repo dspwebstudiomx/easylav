@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/templates/Footer";
 import Header from "@/components/templates/Header";
+import Spacing from "@/components/layout/Spacing";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} bg-light`}>
         <Header />
         <main className="lg:mt-16 xl:mt-0">{children}</main>
+        <Spacing height={"h-20"} />
         <Footer />
       </body>
     </html>
