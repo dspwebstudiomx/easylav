@@ -14,12 +14,13 @@ const Sucursales = () => {
   return (
     <Section>
       <Container>
-        <h1 className='text-4xl text-center font-semibold'>Sucursales</h1>
         <Spacing height={'h-12'} />
-        <h2 className='text-3xl'>Morelia</h2>
-        <CityCardGenerator city={'Morelia'} />
+        <h2 className='text-4xl text-center font-semibold'>Morelia</h2>
+        <Spacing height={'h-1'} />
+        < CityCardGenerator city={'Morelia'} />
         <Spacing height={'h-20'} />
         <h2 className='text-3xl'>León</h2>
+        <Spacing height={'h-6'} />
         <CityCardGenerator city={'León'} />
       </Container>
     </Section>

@@ -17,7 +17,7 @@ const NuestrasSucursales = () => {
         <Spacing height={'h-6'} />
 
         <div className='grid place-content-center'>
-          <div className='grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-12 mx-auto'>
+          <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 mx-auto'>
             {localservices.map(localservice => {
               return (
                 <SucursalCard

@@ -7,7 +7,7 @@ const SobreNosotros = ({ id }) => {
   return (
     <Section id={'nosotros'}>
       <Container >
-        <div className='grid sm:grid-cols-2 gap-x-20 gap-y-16'>
+        <div className='grid sm:grid-cols-2 gap-x-20 gap-y-16 py-32'>
           <div className='grid place-content-center gap-8'>
             <div className='border-l-4 border-primary pl-3'>
               <h2>Sobre Nosotros</h2>
