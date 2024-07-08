@@ -1,5 +1,5 @@
 'use client'
-import { AdvancedMarker, APIProvider, Map, Pin } from '@vis.gl/react-google-maps'
+import { APIProvider, Map, Marker, Pin } from '@vis.gl/react-google-maps'
 import React from 'react'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { FaRegClock } from 'react-icons/fa6'
@@ -11,9 +11,9 @@ const SucursalCard = ({ title, id, position, gmap, serviceday1, serviceday2, ser
         <h3 className='text-center font-semibold text-xl'>{title}</h3>
         <div className='w-full h-[180px] rounded-lg'>
           <Map center={position} zoom={17} id={`gmap-${title}`}>
-            <AdvancedMarker position={position}>
+            <Marker position={position}>
               <Pin background={'#FBBC04'} glyphColor={'#000'} borderColor={'#000'} />
-            </AdvancedMarker>
+            </Marker>
           </Map>
         </div>
         <a href={gmap} target="_blank" rel="noopener noreferrer">

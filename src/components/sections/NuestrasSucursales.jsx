@@ -33,9 +33,7 @@ const NuestrasSucursales = () => {
                   ciudad={localservices.ciudad}
                 />
               )
-            }
-            )
-            }
+            })}
           </div>
           <ButtonContainer position={'justify-center'} distance={'mt-16'}>
             <ButtonSecondary title={'Contáctanos'} href={'/contacto'} width={'xl:w-[340px]'} border={'border-none'} />

@@ -1,4 +1,4 @@
-'use client'
+
 import "../../node_modules/animate.css/animate.css";
 import ButtonPrimary from "@/components/buttons/ButtonPrimary";
 import ButtonSecondary from "@/components/buttons/ButtonSecondary";
@@ -9,9 +9,9 @@ import { Fragment } from "react";
 import heroImage from "../assets/images/images/annie-spratt-5TfCI4nj6B4-unsplash-2400.jpg";
 import SobreNosotros from "@/components/sections/SobreNosotros";
 import NuestrosServicios from "@/components/sections/NuestrosServicios";
+import PorqueElegirnos from "@/components/sections/PorqueElegirnos"
 import NuestrasSucursales from "@/components/sections/NuestrasSucursales";
 import Testimonios from "@/components/sections/Testimonios";
-import PorqueElegirnos from "@/components/sections/PorqueElegirnos";
 
 export default function Home() {
   return (
@@ -46,8 +46,8 @@ export default function Home() {
       <SobreNosotros />
       <NuestrosServicios />
       <PorqueElegirnos />
-      <NuestrasSucursales />
       <Testimonios />
+      <NuestrasSucursales />
     </Fragment>
   );
 }
